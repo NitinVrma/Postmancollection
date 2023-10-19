@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "48b71c9f-4753-47c3-934d-bfd5e2607055",
+		"name": "Practice 11",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23161556"
+	},
+	"item": [
+		{
+			"name": "Post Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://040ebebb-7d25-4874-ab4f-f19318950dbe.mock.pstmn.io/Post",
+					"protocol": "https",
+					"host": [
+						"040ebebb-7d25-4874-ab4f-f19318950dbe",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"Post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url}}/GetInJsonData",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "url",
+						"value": "https://040ebebb-7d25-4874-ab4f-f19318950dbe.mock.pstmn.io",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/GetInJson",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"GetInJson"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Getuser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/user?id=4",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://040ebebb-7d25-4874-ab4f-f19318950dbe.mock.pstmn.io/post",
+					"protocol": "https",
+					"host": [
+						"040ebebb-7d25-4874-ab4f-f19318950dbe",
+						"mock",
+						"pstmn",
+						"io"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://040ebebb-7d25-4874-ab4f-f19318950dbe.mock.pstmn.io"
+		}
+	]
+}
